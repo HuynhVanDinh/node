@@ -74,7 +74,8 @@ class ContactService {
 
     async deleteAll() {
         const result = await this.Contact.deleteMany({});
-        return result.deleteCount;
+        console.log(result)
+        return result.deletedCount;
     }
 }
 
